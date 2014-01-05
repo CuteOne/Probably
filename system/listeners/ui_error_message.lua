@@ -10,4 +10,8 @@ ProbablyEngine.listener.register("UI_ERROR_MESSAGE", function(...)
     ProbablyEngine.module.player.infront = false
     ProbablyEngine.module.player.infrontTime = time()
   end
+  if error == SPELL_FAILED_TARGET_NO_RANGED_WEAPONS then
+    ProbablyEngine.module.player.disarmable = false
+    ProbablyEngine.module.player.disarmTime = time()
+  end
 end)
