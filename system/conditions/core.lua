@@ -194,6 +194,10 @@ ProbablyEngine.condition.register("infront", function(target, spell)
   return ProbablyEngine.module.player.infront
 end)
 
+ProbablyEngine.condition.register("disarmable", function(target, spell)
+  return ProbablyEngine.module.player.disarmable
+end)
+
 ProbablyEngine.condition.register("combopoints", function()
   return GetComboPoints('player', 'target')
 end)
